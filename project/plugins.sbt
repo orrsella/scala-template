@@ -1,1 +1,1 @@
-addSbtPlugin("com.orrsella" % "sbt-sublime" % "1.0.5")
+addSbtPlugin("com.orrsella" % "sbt-sublime" % "1.0.9")

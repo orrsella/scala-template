@@ -1,9 +1,15 @@
 package com.example
 
-import org.scalatest._
+import org.specs2.mutable.Specification
+import org.specs2.specification.Scope
 
-class MainSpec extends FunSuite {
-  test("Main hello message") {
-    assert(Main.msg === "Hello World")
+class MainSpec extends Specification {
+
+  trait Context extends Scope
+
+  "main" should {
+    "have msg `Hello World`" in new Context {
+      Main.msg must_== "Hello World"
+    }
   }
 }
