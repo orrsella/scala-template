@@ -4,5 +4,6 @@ A generic, sbt-based, scala (or java) project template, with *very* basic config
 
 ## What you get out-of-the-box
 
-* logback
-* scalatest
+* Scala/Java project structure
+* Logback
+* Specs2
