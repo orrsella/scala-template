@@ -7,3 +7,5 @@ A generic, sbt-based, scala (or java) project template, with *very* basic config
 * Scala/Java project structure
 * Logback
 * Specs2
+
+[![Analytics](https://ga-beacon.appspot.com/UA-29484955-3/scala-template/readme?pixel)](https://github.com/igrigorik/ga-beacon)
