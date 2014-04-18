@@ -4,13 +4,12 @@ organization := "com.example"
 
 version := "1.0.1-SNAPSHOT"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.0"
 
-scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature")
+scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-Xfuture", "-Xlint")
 
-resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+incOptions := incOptions.value.withNameHashing(true)
 
 libraryDependencies ++= Seq(
-  "ch.qos.logback" % "logback-classic" % "1.0.13",
-  "org.specs2" %% "specs2" % "2.3.7" % "test"
-)
+  "ch.qos.logback" % "logback-classic" % "1.1.2",
+  "org.specs2" %% "specs2" % "2.3.11" % "test")
